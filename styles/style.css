@@ -152,4 +152,136 @@ a:hover {
   .main-content {
     padding: 1rem;
   }
+}
+.content-grid {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  background: #121212;
+  color: #e0e0e0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex-wrap: wrap;
+}
+.content-grid .chart-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(90, 247, 142, 0.53);
+  flex-shrink: 0;
+  width: 350px;
+}
+.content-grid .feedback-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.5rem;
+  min-width: 320px;
+  max-width: 480px;
+}
+.content-grid .feedback-section .reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+.content-grid .feedback-section .reviews .review-card {
+  background: linear-gradient(145deg, #1b1b1b, #101010);
+  border: 1.5px solid #5af78e;
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 0 8px rgba(90, 247, 142, 0.27), inset 0 0 5px rgba(90, 247, 142, 0.13);
+  transition: background-color 0.3s ease;
+}
+.content-grid .feedback-section .reviews .review-card:hover {
+  background: linear-gradient(145deg, #27d97f, #1fae66);
+  color: #121212;
+  box-shadow: 0 0 15px rgba(39, 217, 127, 0.8), inset 0 0 10px rgba(39, 217, 127, 0.8);
+}
+.content-grid .feedback-section .reviews .review-card h4 {
+  margin: 0 0 4px 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.content-grid .feedback-section .reviews .review-card .email {
+  font-size: 0.8rem;
+  color: #8af7aa;
+  margin-bottom: 0.6rem;
+  display: block;
+  font-style: italic;
+}
+.content-grid .feedback-section .reviews .review-card p {
+  margin: 0;
+  line-height: 1.3;
+  font-size: 0.95rem;
+}
+.content-grid .feedback-section .reply-box {
+  background: linear-gradient(145deg, #121212, black);
+  border-radius: 14px;
+  padding: 1.4rem 1.6rem;
+  box-shadow: 0 0 15px rgba(123, 62, 255, 0.67), inset 0 0 10px rgba(123, 62, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #c1a4ff;
+}
+.content-grid .feedback-section .reply-box h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #a179ff;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.content-grid .feedback-section .reply-box textarea {
+  resize: vertical;
+  min-height: 100px;
+  background: black;
+  border: 2px solid #7b3eff;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  color: #fafafa;
+  font-family: inherit;
+  box-shadow: inset 0 0 6px rgba(123, 62, 255, 0.67);
+  transition: border-color 0.3s ease;
+}
+.content-grid .feedback-section .reply-box textarea:focus {
+  outline: none;
+  border-color: #5af78e;
+  box-shadow: 0 0 8px rgba(90, 247, 142, 0.8);
+}
+.content-grid .feedback-section .reply-box button {
+  background: #5af78e;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  color: #121212;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  width: 100px;
+  box-shadow: 0 0 15px rgba(90, 247, 142, 0.8);
+}
+.content-grid .feedback-section .reply-box button:hover {
+  background-color: #27d97f;
+  box-shadow: 0 0 20px rgba(39, 217, 127, 0.8);
+}
+
+@media (max-width: 850px) {
+  .content-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-grid .chart-box img {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 2rem;
+  }
+  .content-grid .feedback-section {
+    max-width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
