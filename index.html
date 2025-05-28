@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Admin Dashboard</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><img src="assets/logo.png" alt="Logo"></div>
+    <nav class="nav-links">
+      <a href="#">Dashboard</a>
+      <a href="#">Products</a>
+      <a href="#">Orders</a>
+    </nav>
+    <div class="actions">
+      <input type="text" placeholder="Search...">
+      <i class="fas fa-cog"></i>
+      <img src="assets/profile.png" class="profile" alt="Profile">
+      <button class="logout">Logout</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <a href="#"><i class="fas fa-home"></i> Dashboard</a>
+      <a href="#"><i class="fas fa-users"></i> Users</a>
+      <a href="#"><i class="fas fa-cogs"></i> Settings</a>
+      <a href="#"><i class="fas fa-chart-line"></i> Analytics</a>
+    </aside>
+
+    <main class="main-content">
+      <section class="user-table">
+        <h2>Users</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Registered</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alex Hunter</td>
+              <td>alex@example.com</td>
+              <td>2024-01-15</td>
+            </tr>
+            <tr>
+              <td>Sara Moon</td>
+              <td>sara@example.com</td>
+              <td>2024-02-11</td>
+            </tr>
+            <tr>
+              <td>Neo Core</td>
+              <td>neo@example.com</td>
+              <td>2024-03-05</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="charts">
+        <h2>Analytics</h2>
+        <img src="assets/chart-placeholder.png" alt="Chart 1">
+        <img src="assets/chart-placeholder.png" alt="Chart 2">
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Gaming Corp. All rights reserved.</p>
+    <p>Contact: support@gaming.com</p>
+    <div class="socials">
+      <i class="fab fa-discord"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+  </footer>
+</body>
+</html>
